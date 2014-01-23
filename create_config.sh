@@ -41,6 +41,6 @@ done
 
 echo "Your config file is ready"
 
-
+./bin/madevent me5.cmd
 
 fi
