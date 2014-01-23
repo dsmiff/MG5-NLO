@@ -5,7 +5,9 @@
 #################################################
 
 # Define generation 
-
+# In this case, we create a config for a T1t1t scan with a gluino mass of 1 TeV and lsp mass of 100 GeV. 
+# The config scans different stop masses and if Delphes is initiated will produce a root ttree
+# Initial parameters can be changed in param_card.dat or include below.
 
 echo "                     "
 echo "**********************************"
@@ -24,8 +26,8 @@ else
 
 MlspMin=100
 MlspMax=650
-MstopMin=200
-MstopMax=750
+MstopMin=250
+MstopMax=300
 StepSize=25
 
 printf '# First generation' > me5.cmd     # Not neccessary 
@@ -41,6 +43,6 @@ done
 
 echo "Your config file is ready"
 
-./bin/madevent me5.cmd
+
 
 fi
