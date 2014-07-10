@@ -43,3 +43,10 @@ Not available anymore (since v2.0.0).
 But you can still run MadGraph5_aMC@NLO by doing the following:
 ./bin/mg5_aMC proc_card.dat
 
+
+If you want to run pythia after generating unweighted_events.lhe.gz then follow:
+
+$ cd Events
+$ ../bin/internal/run_pythia ../../pythia-pgs/src/ 0 run_01/
+
+This will output pythia_events.hep for the process unweighted_events.lhe.gz in Events/run_01 directory

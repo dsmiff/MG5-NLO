@@ -32,6 +32,8 @@ StepSize=25
 
 printf '# First generation' > me5.cmd     # Not neccessary 
 
+# Can define other parameters here eg. set ebeam1 4000
+
 
 # Turn Delphes on, Pythia hadronisation/showering is on by default
 
